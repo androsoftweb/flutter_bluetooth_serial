@@ -153,7 +153,7 @@ class FlutterBluetoothSerial {
           .invokeMethod('removeDeviceBond', {'address': address});
 
   // Function used as pairing request handler.
-  Function _pairingRequestHandler;
+  Function? _pairingRequestHandler;
 
   /// Allows listening and responsing for incoming pairing requests.
   ///
