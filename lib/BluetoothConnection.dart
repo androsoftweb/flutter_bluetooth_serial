@@ -149,7 +149,7 @@ class _BluetoothStreamSink<Uint8List> extends StreamSink<Uint8List> {
 
   /// Unsupported - this ouput sink cannot pass errors to platfom code.
   @override
-  void addError(Object error, [StackTrace stackTrace]) {
+  void addError(Object error, [StackTrace? stackTrace]) {
     throw UnsupportedError(
         "BluetoothConnection output (response) sink cannot receive errors!");
   }
