@@ -108,7 +108,7 @@ class FlutterBluetoothSerial {
   /// Note: `passkeyConfirm` will probably not work, since 3rd party apps cannot
   /// get `BLUETOOTH_PRIVILEGED` permission (at least on newest Androids).
   Future<bool> bondDeviceAtAddress(String address,
-      {String pin, bool passkeyConfirm}) async {
+      {String? pin, bool? passkeyConfirm}) async {
     if (pin != null || passkeyConfirm != null) {
       if (_pairingRequestHandler != null) {
         throw "pairing request handler already registered";
